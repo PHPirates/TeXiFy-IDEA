@@ -4,10 +4,10 @@
 %%
 
 % Preamble
-\documentclass[11pt]{article}
+\documentclass{exam}
 
 % Packages
-\usepackage{a4wide}
+\usepackage{thomaspackage}
 
 % Document
 \begin{document}
