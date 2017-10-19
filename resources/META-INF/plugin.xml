@@ -26,7 +26,7 @@
     <!-- Plugin information -->
     <id>nl.rubensten.texifyidea</id>
     <name>TeXiFy IDEA</name>
-    <version>0.4</version>
+    <version>b0.5-nightly.2</version>
     <idea-version since-build="141.0"/>
     <vendor url="https://ruben-sten.github.io/home/index.html">Ruben-Sten</vendor>
 
@@ -43,38 +43,13 @@
 
     <!-- Changelog -->
     <change-notes><![CDATA[
-        <h1>Beta 0.4</h1>
+        <h1>Beta 0.5 nightly release 2</h1>
         <p>
-            The fifth installment of the TeXiFy IDEA plugin with as main feature: <em>inspections</em>!
+            This is a nightly build with the very latest features, available before the official Beta 0.5 release.
         </p>
-        <p><em>Changes</em></p>
-        <ul>
-            <li>Added heaps of inspections (and quick fixes)</li>
-            <li>Added document navigation support for SumatraPDF (Windows only)</li>
-            <li>Added quick navigation for labels</li>
-            <li>Added word count tool</li>
-            <li>Added several insertion actions</li>
-            <li>Added toggle star action</li>
-            <li>Packages of registered commands get included automatically</li>
-            <li>Packages that are required for commands show up in autocomplete</li>
-            <li>More math symbols show up in preview of autocomplete</li>
-            <li>Extended the default list of commands</li>
-        </ul>
-
-        <p><em>Bug fixes</em></p>
-        <ul>
-            <li>Fixed autocomplete for files not showing up (<a href="https://github.com/Ruben-Sten/TeXiFy-IDEA/issues/87">#87</a>)</li>
-            <li>Fixed autocomplete not working backward (<a href="https://github.com/Ruben-Sten/TeXiFy-IDEA/issues/86">#86</a>)</li>
-            <li>Fixed NPE related to custom commands in autocomplete (<a href="https://github.com/Ruben-Sten/TeXiFy-IDEA/issues/89">#89</a>)</li>
-            <li>Fixed 2nd dollar sign being inserted in comments (<a href="https://github.com/Ruben-Sten/TeXiFy-IDEA/issues/41">#41</a>)</li>
-            <li>Fixed failed build in IJ 2017.2 (<a href="https://github.com/Ruben-Sten/TeXiFy-IDEA/issues/80">#80</a>)</li>
-            <li>Fixed NPE in run configurations (<a href="https://github.com/Ruben-Sten/TeXiFy-IDEA/issues/82">#82</a>)</li>
-            <li>Fixed pdfLaTeX not ending with code 0 (<a href="https://github.com/Ruben-Sten/TeXiFy-IDEA/issues/100">#100</a>)</li>
-            <li>Fixed more NPEs</li>
-        </ul>
-
-        <p>Full list available on the <a href="https://github.com/Ruben-Sten/TeXiFy-IDEA/releases/tag/b0.4">GitHub
-            release page</a>.</p>
+        <p>
+            For changes, see the <a href="https://github.com/Ruben-Sten/TeXiFy-IDEA/milestone/5?closed=1">milestone page</a>.
+        </p>
         ]]>
     </change-notes>
 
