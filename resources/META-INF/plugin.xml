@@ -72,45 +72,15 @@
 
     <!-- Changelog -->
     <change-notes><![CDATA[
-        <p><strong>Beta 0.6</strong></p>
+        <h1>Beta 0.6 nightly release</h1>
         <p>
-            A new release of TeXiFy IDEA, with a smaller number of additions but with a big number of crash fixes.
+            This is a nightly build with the very latest features, available before the official Beta 0.6 release.
         </p>
         <p>
-            We thank everyone who submitted issues and provided feedback to make TeXiFy IDEA better.
-            Your input is valuable and well appreciated.
+            For changes, see the <a href="https://github.com/Ruben-Sten/TeXiFy-IDEA/milestone/7?closed=1">milestone page</a>.
         </p>
-        <br>
-        <p>
-            <em>Additions</em>
-        </p>
-        <ul>
-            <li>Added Create File quick fix for the file not found inspection. (<a href="https://github.com/Ruben-Sten/TeXiFy-IDEA/issues/421">#421</a>)</li>
-        </ul>
-        <br>
-        <p>
-            <em>Changes</em>
-        </p>
-        <ul>
-            <li>MissingDocumentclass and MissingDocumentEnvironment inspections are now disabled by default.</li>
-            <li>Single quotes will not trigger automatic brace insertion anymore for sub- and superscripts. (<a href="https://github.com/Ruben-Sten/TeXiFy-IDEA/issues/495">#495</a>)</li>
-        </ul>
-        <br>
-        <p>
-            <em>Bug fixes</em>
-        </p>
-        <ul>
-            <li>Fixed invalid range in LeftRightParenthesesIntention.</li>
-            <li>Fixed 2018.1 versioning issues. (<a href="https://github.com/Ruben-Sten/TeXiFy-IDEA/issues/483">#483</a>, <a href="https://github.com/Ruben-Sten/TeXiFy-IDEA/issues/484">#484</a>)</li>
-            <li>Sumatra native library fix. (<a href="https://github.com/Ruben-Sten/TeXiFy-IDEA/issues/443">#443</a>)</li>
-            <li>Fixed <code>\dots</code> requiring amsmath whilst it should not. (<a href="https://github.com/Ruben-Sten/TeXiFy-IDEA/issues/426">#426</a>)</li>
-            <li>Fixed crashes. (<a href="https://github.com/Ruben-Sten/TeXiFy-IDEA/issues/386">#386</a>, <a href="https://github.com/Ruben-Sten/TeXiFy-IDEA/issues/415">#415</a>, <a href="https://github.com/Ruben-Sten/TeXiFy-IDEA/issues/423">#423</a>, <a href="https://github.com/Ruben-Sten/TeXiFy-IDEA/issues/427">#427</a>, <a href="https://github.com/Ruben-Sten/TeXiFy-IDEA/issues/447">#447</a>, <a href="https://github.com/Ruben-Sten/TeXiFy-IDEA/issues/454">#454</a>, <a href="https://github.com/Ruben-Sten/TeXiFy-IDEA/issues/466">#466</a>, <a href="https://github.com/Ruben-Sten/TeXiFy-IDEA/issues/493">#493</a>)
-        </ul>
-        <br>
-        <p>
-            Full list of releases available on the <a href="https://github.com/Ruben-Sten/TeXiFy-IDEA/releases">GitHub releases page</a>.
-        </p>
-    ]]></change-notes>
+        ]]>
+    </change-notes>
 
     <project-components>
         <component>
