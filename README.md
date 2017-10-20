@@ -4,6 +4,9 @@
 [![Donate via PayPal](https://img.shields.io/badge/Donate!-PayPal-orange.png)](https://www.paypal.me/RubenSchellekens)
 
 # TeXiFy-IDEA
+## This fork was previously used to provide nightly builds, which are now available in the [alpha channel](https://github.com/Ruben-Sten/TeXiFy-IDEA/tree/master#alpha-channel-subscribing-to-the-very-latest-features)
+### You can view the exact state of the repo used to generate the nightly build at the [nightly-build](https://github.com/PHPirates/TeXiFy-IDEA/tree/nightly-build) branch.
+
 LaTeX support for the IntelliJ Platform by [JetBrains](https://www.jetbrains.com/).
 
 No idea where to start? Have a look at the [installation instructions](#installation-instructions). Otherwise, take a look at the [tips](#tips) instead.
