@@ -77,7 +77,7 @@
             This is a nightly build with the very latest features, available before the official Beta 0.6 release.
         </p>
         <p>
-            For changes, see the <a href="https://github.com/Ruben-Sten/TeXiFy-IDEA/milestone/7?closed=1">milestone page</a>.
+            For changes, see the <a href="https://github.com/Ruben-Sten/TeXiFy-IDEA/milestone/9?closed=1">milestone page</a>.
         </p>
         ]]>
     </change-notes>
@@ -262,7 +262,7 @@
         <lookup.charFilter implementation="nl.rubensten.texifyidea.completion.LatexCharFilter" id="latex"/>
         <enterHandlerDelegate implementation="nl.rubensten.texifyidea.editor.InsertEnumerationItem" />
         <typedHandler implementation="nl.rubensten.texifyidea.editor.ShiftTracker" />
-        <typedHandler implementation="nl.rubensten.texifyidea.editor.UpDownAutoBracket" />
+        <!--<typedHandler implementation="nl.rubensten.texifyidea.editor.UpDownAutoBracket" />--> <!-- Removed functionality because I didn't like it -->
         <typedHandler implementation="nl.rubensten.texifyidea.editor.BibtexQuoteInsertHandler"/>
 
         <!-- Line markers -->
