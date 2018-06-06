@@ -30,6 +30,7 @@ open class LatexTemplatesFactory : FileTemplateGroupDescriptorFactory {
         const val fileTemplateSty = "LaTeX Package.sty"
         const val fileTemplateCls = "LaTeX Document class.cls"
         const val fileTemplateBib = "BibTeX Bibliography.bib"
+        const val fileTemplateTikz = "TikZ Picture.tikz"
 
         @JvmStatic
         fun createFromTemplate(directory: PsiDirectory, fileName: String,
@@ -85,6 +86,7 @@ open class LatexTemplatesFactory : FileTemplateGroupDescriptorFactory {
         descriptor.addTemplate(FileTemplateDescriptor(fileTemplateSty, TexifyIcons.STYLE_FILE))
         descriptor.addTemplate(FileTemplateDescriptor(fileTemplateCls, TexifyIcons.CLASS_FILE))
         descriptor.addTemplate(FileTemplateDescriptor(fileTemplateBib, TexifyIcons.BIBLIOGRAPHY_FILE))
+        descriptor.addTemplate(FileTemplateDescriptor(fileTemplateTikz, TexifyIcons.LATEX_FILE))
 
         return descriptor
     }
