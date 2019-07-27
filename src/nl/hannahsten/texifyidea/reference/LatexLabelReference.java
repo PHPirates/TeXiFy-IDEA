@@ -10,6 +10,7 @@ import nl.hannahsten.texifyidea.completion.handlers.LatexReferenceInsertHandler;
 import nl.hannahsten.texifyidea.psi.BibtexId;
 import nl.hannahsten.texifyidea.psi.LatexCommands;
 import nl.hannahsten.texifyidea.util.*;
+import nl.hannahsten.texifyidea.util.files.FileSetKt;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
