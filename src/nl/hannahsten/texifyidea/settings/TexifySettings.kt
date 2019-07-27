@@ -29,6 +29,7 @@ class TexifySettings : PersistentStateComponent<TexifySettings> {
     var automaticSecondInlineMathSymbol = true
     var automaticUpDownBracket = true
     var automaticItemInItemize = true
+    var continuousPreview = false
     var automaticQuoteReplacement = QuoteReplacement.NONE
 
     override fun getState() = this
