@@ -33,6 +33,7 @@ object PackageUtils {
 
     /**
      * Inserts a usepackage statement for the given package in a certain file.
+     * todo all callers should use other usepackage?
      *
      * @param file
      *          The file to add the usepackage statement to.
@@ -42,7 +43,7 @@ object PackageUtils {
      *          Parameters to add to the statement, `null` or empty string for no parameters.
      */
     @JvmStatic
-    fun insertUsepackage(document: Document, file: PsiFile, packageName: String, parameters: String?) {
+    private fun insertUsepackage(document: Document, file: PsiFile, packageName: String, parameters: String?) {
         val commands = LatexCommandsIndex.getItems(file)
 
         val commandName = if (file.isStyleFile() || file.isClassFile()) "\\RequirePackage" else "\\usepackage"
@@ -93,7 +94,7 @@ object PackageUtils {
     }
 
     /**
-     * Inserts a usepackage statement for the given package in a certain file.
+     * Inserts a usepackage statement for the given package in the root file of the fileset containing the given file.
      * Will not insert a new statement when the package has already been included.
      *
      * @param file
@@ -111,11 +112,14 @@ object PackageUtils {
             return
         }
 
-        val document = file.document() ?: return
+        // Packages should always be included in the root file
+        val rootFile = file.findRootFile()
+
+        val document = rootFile.document() ?: return
 
         val params = pack.parameters
         val parameterString = StringUtil.join(params, ",")
-        insertUsepackage(document, file, pack.name, parameterString)
+        insertUsepackage(document, rootFile, pack.name, parameterString)
     }
 
     /**
@@ -249,14 +253,6 @@ object PackageUtils {
  * @see PackageUtils.insertUsepackage
  */
 fun PsiFile.insertUsepackage(pack: Package) = PackageUtils.insertUsepackage(this, pack)
-
-/**
- * @see PackageUtils.insertUsepackage
- */
-fun PsiFile.insertUsepackage(packageName: String, parameters: String?) {
-    val document = document() ?: return
-    PackageUtils.insertUsepackage(document, this, packageName, parameters)
-}
 
 /**
  * @see PackageUtils.getIncludedPackages
