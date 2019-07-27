@@ -9,11 +9,6 @@ import com.intellij.psi.PsiElement
 import nl.hannahsten.texifyidea.psi.LatexEnvironment
 import nl.hannahsten.texifyidea.util.childrenOfType
 import nl.hannahsten.texifyidea.util.endOffset
-import nl.hannahsten.texifyidea.psi.LatexEnvironment
-import nl.hannahsten.texifyidea.util.childrenOfType
-import nl.rubensten.texifyidea.psi.LatexEnvironment
-import nl.rubensten.texifyidea.util.childrenOfType
-import nl.rubensten.texifyidea.util.endOffset
 import java.util.*
 
 /**
