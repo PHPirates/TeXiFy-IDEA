@@ -11,6 +11,7 @@ import nl.hannahsten.texifyidea.lang.Package
 import nl.hannahsten.texifyidea.ui.tablecreationdialog.ColumnType
 import nl.hannahsten.texifyidea.ui.tablecreationdialog.TableCreationDialogWrapper
 import nl.hannahsten.texifyidea.util.*
+import nl.hannahsten.texifyidea.util.files.psiFile
 import java.util.*
 
 /**
@@ -21,7 +22,7 @@ import java.util.*
  */
 class LatexTableWizardAction : AnAction() {
     override fun actionPerformed(e: AnActionEvent) {
-        val file = e.getData(PlatformDataKeys.VIRTUAL_FILE)
+        val file = e.getData(PlatformDataKeys.VIRTUAL_FILE) ?: return
         val project = e.getData(PlatformDataKeys.PROJECT)
         val editors = FileEditorManager.getInstance(project!!).selectedEditors
         val editor = editors.first { it is TextEditor } as TextEditor
@@ -45,8 +46,8 @@ class LatexTableWizardAction : AnAction() {
             WriteCommandAction.runWriteCommandAction(project,
                     "Insert table",
                     "LaTeX",
-                    Runnable { file!!.psiFile(project)!!.insertUsepackage(Package.BOOKTABS) },
-                    file!!.psiFile(project)
+                    Runnable { file.psiFile(project)!!.insertUsepackage(Package.BOOKTABS) },
+                    file.psiFile(project)
             )
         }
 
